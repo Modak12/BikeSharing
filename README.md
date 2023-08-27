@@ -19,10 +19,23 @@ The company wants to know:
 Dataset used here is : day.csv
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+Based on the coefficients we can say, below are the list of important variables in the order of there importance:
+- temp : 0.547727 indicates that temperature has a significant impact on bookings
+- light_rain : -0.289291 indicates that snow & rain are negatively impacting the bookings
+- yr : 0.232913 indicates that the bookings of bike has increased over year
+- windspeed : -0.154257 indicates that bike bookings decreases with increase in windspeed
+- winter : 0.132127 indicates that bike booking is preferrable during winter season
+
+Inference
+- We can say that with increase in temperature and good weather condition positively affects the bike booking.
+- We can dock more bikes based on the weather forcast( Clear > Misty > Rainy)
+- Summer & Winters have more bike bookings, so we can promote, advertise more during these seasons
+- Month september and day saturday also shows positive relationship with bike bookings
+- There is a increase in bike bookings over the year. Once the lockdown opens, we can see the increase in bookings as well
+- We can offer discounts may be to increase the bike bookings during spring season, cloudy and rainy weather etc.
+
+We can see that the equation of our best fitted line is:
+$ cnt = (0.547727 temp) + (0.232913 yr) + (0.132127 winter) + (0.099248 Sep) + (0.086798 summer) + (0.059118 Sat) + (0.047862 workingday) - (0.289291 light_rain) - (0.154257 windspeed) - (0.057089 holiday) - (0.081844 * misty)
 
 
 ## Technologies Used
